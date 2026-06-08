@@ -85,7 +85,7 @@ export const projects: Project[] = [
     description: 'Built a cemetery management system to organize burial records, plot details, and visitor information through a simple web interface.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     links: {},
-    image: '/Project4.png',
+    image: '/Project4.PNG',
     galleryImages: ['/Project4.PNG', '/Project4-1.PNG', '/Project4-2.PNG'],
   },
   {
@@ -94,7 +94,7 @@ export const projects: Project[] = [
     description: 'Developed a banking system to handle account creation, transactions, and balance tracking with reliable backend logic.',
     technologies: ['Python'],
     links: {},
-    image: '/Project5.png',
+    image: '/Project5.PNG',
     galleryImages: ['/Project5.PNG', '/Project5-1.PNG', '/Project5-2.PNG'],
   },
   {
