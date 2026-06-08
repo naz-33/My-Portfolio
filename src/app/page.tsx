@@ -13,7 +13,6 @@ import Projects from '@/components/sections/Projects';
 import Recommendations from '@/components/sections/Recommendations';
 import Contact from '@/components/sections/Contact';
 import { personalInfo } from '@/data/portfolio';
-import type { SkillCategory } from '@/types';
 import Education from '@/components/sections/Education';
 
 export default function Home() {
@@ -21,7 +20,7 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState('home');
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [roleIndex, setRoleIndex] = useState(0);
-  const [activeSkillTab, setActiveSkillTab] = useState<SkillCategory>('frontend');
+  
 
   // Theme toggle
   useEffect(() => {
@@ -107,11 +106,10 @@ export default function Home() {
       
       <Hero theme={theme} roleIndex={roleIndex} />
       <About />
-      <Experience />
-      <Skills activeSkillTab={activeSkillTab} setActiveSkillTab={setActiveSkillTab} theme={theme} />
       <Projects />
+      <Skills theme={theme} />
+      <Experience />
       <Education />
-      <Recommendations />
       <Contact theme={theme} />
       
       <Footer />

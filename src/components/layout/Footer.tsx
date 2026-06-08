@@ -29,7 +29,7 @@ export default function Footer() {
               Passionate about clean code, user-focused design, and impact-driven tech.
             </p>
             <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', fontStyle: 'italic' }}>
-              Built by {personalInfo.name} | Software Engineer & Problem Solver
+              Built by {personalInfo.name} | Aspiring Software Developer | Always Learning | Open to Opportunities
             </p>
           </div>
 
@@ -75,7 +75,7 @@ export default function Footer() {
         }}>
           <p style={{ marginBottom: '0.5rem' }}>This page was handmade with love by a human.</p>
           <p style={{ marginBottom: '0.5rem' }}>AI must help, not replace</p>
-          <p style={{ marginTop: '1rem' }}>© 2025 {personalInfo.name} ✨ All rights reserved.</p>
+          <p style={{ marginTop: '1rem' }}>© 2026 {personalInfo.name} All rights reserved.</p>
         </div>
       </div>
     </footer>

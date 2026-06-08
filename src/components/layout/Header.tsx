@@ -17,9 +17,9 @@ export default function Header({ theme, toggleTheme }: HeaderProps) {
         rel="noopener noreferrer"
         style={{
           padding: '0.7rem 1.5rem',
-          backgroundColor: theme === 'light' ? '#eff6ff' : 'var(--card-bg)',  // Light blue bg in light mode
-          color: theme === 'light' ? '#2563eb' : 'var(--text-primary)',  // Blue text in light mode
-          border: `2px solid ${theme === 'light' ? '#3b82f6' : 'var(--border)'}`,  // Thicker border
+          backgroundColor: theme === 'light' ? '#fdf4fc' : 'var(--card-bg)',  // Light pink bg in light mode
+          color: theme === 'light' ? '#f472d0' : 'var(--text-primary)',  // Pink text in light mode
+          border: `2px solid ${theme === 'light' ? '#f63bc4' : 'var(--border)'}`,  // Thicker border
           borderRadius: '12px',
           fontSize: '0.95rem',
           fontWeight: '600',
@@ -30,15 +30,15 @@ export default function Header({ theme, toggleTheme }: HeaderProps) {
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.transform = 'translateY(-2px)';
-          e.currentTarget.style.backgroundColor = '#3b82f6';
+          e.currentTarget.style.backgroundColor = '#f63bc4';
           e.currentTarget.style.color = 'white';
-          e.currentTarget.style.borderColor = '#3b82f6';
+          e.currentTarget.style.borderColor = '#f63bc4';
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.transform = 'translateY(0)';
-          e.currentTarget.style.backgroundColor = theme === 'light' ? '#eff6ff' : 'var(--card-bg)';
-          e.currentTarget.style.color = theme === 'light' ? '#2563eb' : 'var(--text-primary)';
-          e.currentTarget.style.borderColor = theme === 'light' ? '#3b82f6' : 'var(--border)';
+          e.currentTarget.style.backgroundColor = theme === 'light' ? '#fdf4fc' : 'var(--card-bg)';
+          e.currentTarget.style.color = theme === 'light' ? '#f472d0' : 'var(--text-primary)';
+          e.currentTarget.style.borderColor = theme === 'light' ? '#f63bc4' : 'var(--border)';
         }}
       >
         Resume

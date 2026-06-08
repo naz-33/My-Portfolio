@@ -3,9 +3,11 @@
 ### **Portfolio Website - Technical Specifications**
 
 #### **Project Overview**
+
 A modern, responsive portfolio website for a Full Stack Engineer built with Next.js 14, TypeScript, and Tailwind CSS.
 
 #### **Key Features**
+
 1. **Dark/Light Theme Toggle** - Persistent theme with localStorage
 2. **Smooth Scrolling** - Section navigation with scroll spy
 3. **Responsive Design** - Mobile-first approach
@@ -14,6 +16,7 @@ A modern, responsive portfolio website for a Full Stack Engineer built with Next
 6. **Performance Optimized** - Next.js Image optimization
 
 #### **Technical Stack**
+
 - **Framework:** Next.js 14 (App Router)
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS + CSS Variables
@@ -21,6 +24,7 @@ A modern, responsive portfolio website for a Full Stack Engineer built with Next
 - **Animations:** CSS Transitions + Framer Motion (optional)
 
 #### **Component Structure**
+
 - **Layout Components:** Header, SideNav, ScrollToTop, Footer
 - **Section Components:** Hero, About, Experience, Skills, Projects, Testimonials, Contact
 - **UI Components:** Button, Card, Input (reusable primitives)
@@ -28,14 +32,16 @@ A modern, responsive portfolio website for a Full Stack Engineer built with Next
 - **Data Layer:** Centralized in `/data/portfolio.ts`
 
 #### **Design Requirements**
+
 - Clean, minimalist aesthetic
 - Circular hero photo on the right side
 - Side navigation dots for section tracking
 - Smooth transitions (300ms duration)
 - Card-based layouts with hover effects
-- Color scheme: Blue accent (#3b82f6)
+- Color scheme: Pink accent (#f63bc4)
 
 #### **Sections Required**
+
 1. Home/Hero - Name, roles, CTA buttons, circular photo
 2. About - Profile image + biography text
 3. Experience - Timeline with cards

@@ -1,7 +1,6 @@
 'use client';
 
 import { personalInfo } from '@/data/portfolio';
-import { useState, useEffect } from 'react';
 
 interface HeroProps {
   theme: 'light' | 'dark';
@@ -9,17 +8,6 @@ interface HeroProps {
 }
 
 export default function Hero({ theme, roleIndex }: HeroProps) {
-  const [showProfile, setShowProfile] = useState(false);
-
-  useEffect(() => {
-    // Start with bitmoji, then flip to profile after a short delay
-    const timer = setTimeout(() => {
-      setShowProfile(true);
-    }, 500); // 500ms delay before flipping
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <section id="home" style={{ minHeight: 'auto', padding: '8rem 2rem 4rem', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'var(--bg-primary)'}}>
       <div style={{ maxWidth: '1100px', width: '100%', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '3rem', alignItems: 'center' }} className="grid-cols-1 md:grid-cols-2 hero-container">
@@ -67,9 +55,9 @@ export default function Hero({ theme, roleIndex }: HeroProps) {
               href="#projects"
               style={{
                 padding: '0.9rem 2rem',
-                backgroundColor: theme === 'light' ? '#eff6ff' : 'transparent',  // Light blue bg
-                color: theme === 'light' ? '#2563eb' : 'var(--text-primary)',
-                border: `2px solid ${theme === 'light' ? '#3b82f6' : 'var(--border)'}`,  // Thicker border
+                backgroundColor: theme === 'light' ? '#fdf4fc' : 'transparent',  // Light pink bg
+                color: theme === 'light' ? '#f472d0' : 'var(--text-primary)',
+                border: `2px solid ${theme === 'light' ? '#f63bc4' : 'var(--border)'}`,  // Thicker border
                 borderRadius: '12px',
                 fontSize: '1rem',
                 fontWeight: '600',
@@ -78,15 +66,15 @@ export default function Hero({ theme, roleIndex }: HeroProps) {
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = 'translateY(-2px)';
-                e.currentTarget.style.borderColor = '#3b82f6';
-                e.currentTarget.style.backgroundColor = '#3b82f6';
+                e.currentTarget.style.borderColor = '#f63bc4';
+                e.currentTarget.style.backgroundColor = '#f63bc4';
                 e.currentTarget.style.color = 'white';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.borderColor = theme === 'light' ? '#3b82f6' : 'var(--border)';
-                e.currentTarget.style.backgroundColor = theme === 'light' ? '#eff6ff' : 'transparent';
-                e.currentTarget.style.color = theme === 'light' ? '#2563eb' : 'var(--text-primary)';
+                e.currentTarget.style.borderColor = theme === 'light' ? '#f63bc4' : 'var(--border)';
+                e.currentTarget.style.backgroundColor = theme === 'light' ? '#fdf4fc' : 'transparent';
+                e.currentTarget.style.color = theme === 'light' ? '#f472d0' : 'var(--text-primary)';
               }}
             >
               View My Work
@@ -105,14 +93,14 @@ export default function Hero({ theme, roleIndex }: HeroProps) {
                 width: '100%',
                 height: '100%',
                 borderRadius: '50%',
-                background: 'radial-gradient(circle, rgba(59, 130, 246, 0.6) 0%, rgba(59, 130, 246, 0.3) 40%, transparent 70%)',
+                background: 'radial-gradient(circle, rgba(246, 59, 196, 0.6) 0%, rgba(246, 59, 196, 0.3) 40%, transparent 70%)',
                 filter: 'blur(50px)',
                 zIndex: 0,
               }}
               className="animate-pulse-glow"
             />
             
-            {/* Profile Photo Container with Coin Flip Animation */}
+            {/* Profile Photo Container */}
             <div style={{
               position: 'relative',
               zIndex: 1,
@@ -123,54 +111,22 @@ export default function Hero({ theme, roleIndex }: HeroProps) {
               margin: '20px auto',
               borderRadius: '50%',
               overflow: 'hidden',
-              border: '4px solid #3b82f6',
-              boxShadow: '0 20px 60px rgba(59, 130, 246, 0.5), 0 0 40px rgba(59, 130, 246, 0.3)',
-              perspective: '1000px',
+              border: '4px solid #f63bc4',
+              boxShadow: '0 20px 60px rgba(246, 59, 196, 0.5), 0 0 40px rgba(246, 59, 196, 0.3)',
             }}>
               <div style={{
                 width: '100%',
                 height: '100%',
-                position: 'relative',
-                transformStyle: 'preserve-3d',
-                transition: 'transform 1.5s ease-in-out',
-                transform: showProfile ? 'rotateY(180deg)' : 'rotateY(0deg)',
               }}>
-                {/* Bitmoji Side (Front) */}
-                <div style={{
-                  position: 'absolute',
-                  width: '100%',
-                  height: '100%',
-                  backfaceVisibility: 'hidden',
-                  transform: 'rotateY(0deg)',
-                }}>
-                  <img 
-                    src="/memoji_smiled1.jpeg" 
-                    alt="Harsh Bitmoji" 
-                    style={{ 
-                      width: '100%', 
-                      height: '100%', 
-                      objectFit: 'cover' 
-                    }} 
-                  />
-                </div>
-                {/* Profile Photo Side (Back) */}
-                <div style={{
-                  position: 'absolute',
-                  width: '100%',
-                  height: '100%',
-                  backfaceVisibility: 'hidden',
-                  transform: 'rotateY(180deg)',
-                }}>
-                  <img 
-                    src="/profile.jpg" 
-                    alt="Harsh Profile" 
-                    style={{ 
-                      width: '100%', 
-                      height: '100%', 
-                      objectFit: 'cover' 
-                    }} 
-                  />
-                </div>
+                <img 
+                  src="/profile.jpg" 
+                  alt="Harsh Profile" 
+                  style={{ 
+                    width: '100%', 
+                    height: '100%', 
+                    objectFit: 'cover' 
+                  }} 
+                />
               </div>
             </div>
           </div>

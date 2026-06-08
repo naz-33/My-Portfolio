@@ -5,14 +5,14 @@ export interface Experience {
   title: string;
   company: string;
   duration: string;
-  description: string;
+  description: string | string[];
 }
 
 export interface Skill {
   id: string;
   name: string;
-  icon: string;
-  category: 'all' | 'frontend' | 'backend' | 'devops' | 'database' | 'messaging' | 'testing' | 'other-skills';
+  icon: JSX.Element;
+  category: 'all' | 'frontend' | 'backend' | 'devops' | 'database' | 'messaging' | 'testing' | 'other-skills' | 'ai';
 }
 
 export interface Project {
@@ -27,6 +27,7 @@ export interface Project {
     publication?: string;
   };
   image: string;
+  galleryImages?: string[];
 }
 
 export interface Education {
@@ -35,6 +36,7 @@ export interface Education {
   institution: string;
   duration: string;
   description: string;
+  image?: string;
   type: 'education' | 'certification';
 }
 
@@ -53,4 +55,4 @@ export interface SocialLinks {
   url: string;
 }
 
-export type SkillCategory = 'all' | 'frontend' | 'backend' | 'devops' | 'database' | 'messaging' | 'testing' | 'other-skills';
+export type SkillCategory = 'all' | 'frontend' | 'backend' | 'devops' | 'database' | 'messaging' | 'testing' | 'other-skills' | 'ai';

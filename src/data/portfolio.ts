@@ -3,16 +3,15 @@ import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import React from 'react';
 
 export const personalInfo = {
-  name: 'Harsh Vora',
-  roles: ['Full Stack Engineer', 'Software Engineer', 'Backend Engineer', 'Mobile Developer'],
-  email: 'harshvora242@gmail.com',
+  name: 'Nazlah Nanding',
+  roles: ['Software Developer'],
+  email: 'n.nanding.545627@umindanao.edu.ph',
   greeting: "Hi, my name is",
-  description: "I’m a problem-solver at heart who loves turning ideas into working systems. Whether it’s designing backend infrastructure, building full-stack features, or integrating AI to enhance functionality and efficiency, I focus on creating solutions that are elegant, reliable, and built with purpose.",
+  description: "Computer Science undergraduate with a focus on web development, AI, and machine learning. I enjoy building practical applications and continuously improving my skills.",
   aboutText: [
-    "Hi, I’m Harsh 👋 - a curious problem solver and software engineer. What started as a love for gaming soon turned into a fascination with how those worlds were built, which led me to software engineering.",
-    "I design and develop reactive, event-driven, and high-performance applications that make complex workflows simple and reliable. My toolkit includes Java 17, Spring Boot, Project Reactor, RabbitMQ, PostgreSQL, and Netflix Conductor, with hands-on experience in TypeScript, React, and modern web development.",
-    "I’m big on clean architecture, automation, and developer experience, the kind of principles that make engineering both powerful and enjoyable. Over the years, I’ve worked across the full SDLC, from design and coding to testing, deployment, and production support, thriving in Agile/Scrum teams that value collaboration and continuous learning.",
-    "When I’m not coding, I enjoy exploring new food spots around the city, biking along Chicago’s lakefront, and staying active at the gym."
+    `I'm a Computer Science undergraduate who learns best by shipping things that work outside the classroom. I use projects as a testing ground, whether that means building a feature from scratch, debugging edge cases, or reworking architecture when the first version does not scale. That hands-on process is how I sharpen both technical judgment and execution.
+
+My focus is software development with growing depth in AI and machine learning, especially where ideas need to become practical tools. I care about writing clear, maintainable code and solving problems with real constraints, not just ideal conditions. With each build, I aim to become a stronger engineer: faster at identifying root causes, better at making tradeoffs, and more deliberate about building systems people can actually use.`,
   ],
   resumeUrl: '/resume.pdf',
 };
@@ -20,216 +19,204 @@ export const personalInfo = {
 export const experiences: Experience[] = [
   {
     id: '1',
-    title: 'Software Engineer',
-    company: 'GE Healthcare',
-    duration: 'June 2024 - Present',
-    description: 'Designed and optimized reactive, event-driven backend systems using Java 17, Spring Boot, Project Reactor, and RabbitMQ - improving data-pipeline scalability and real-time streaming efficiency across cloud platforms.'  
+    title: 'Customer Experience Agent',
+    company: 'Alorica',
+    duration: 'May 2024 - December 2025',
+    description: [
+      'Provided support through inbound and outbound communication channels to resolve client issues efficiently.',
+      'Performed basic issue analysis and followed step-by-step troubleshooting workflows to identify and resolve problems.',
+      'Created detailed case documentation and incident reports to ensure proper tracking and resolution of recurring issues.',
+      'Collaborated with internal teams for escalation of complex cases and follow-up resolution.',
+    ],
   },
-  {
-    id: '2',
-    title: 'Software Engineer Specialist',
-    company: 'GE Healthcare',
-    duration: 'October 2021 - June 2024',
-    description: 'Engineered distributed microservices and REST APIs for healthcare imaging workflows, boosting throughput 3 - 5× and enhancing reliability through Docker-based deployments, testing automation, and Agile delivery.' 
-  },
-  {
-    id: '3',
-    title: 'Software Developer Intern - MERN Stack',
-    company: 'SQUADDD',
-    duration: 'July 2021 - October 2021',
-    description: 'Built RESTful APIs and middleware using Express.js, JWT, and MongoDB Atlas, improving backend integration by 20%. Collaborated with front-end teams in an Agile setup to design cohesive, secure, and scalable full-stack solutions.'
-  },
-  {
-    id: '4',
-    title: 'Graduate Teaching Assistant - Discrete Structures',
-    company: 'Illinois Institute of Technology',
-    duration: 'January 2021 - May 2021',
-    description: 'Led weekly virtual office hours to support students, clarify course concepts, and guide them through assignments. Assisted the professor in preparing assignments and detailed solution sets and contributed to maintaining a smooth academic workflow for the course.'
-  },
-  {
-    id: '5',
-    title: 'Android Application Developer',
-    company: 'M-Intellect Global',
-    duration: 'May 2017 - July 2017',
-    description: 'Developed feature-rich Android apps using SQLite, RecyclerView, and custom UI components. Integrated third-party libraries like Retrofit and Picasso to enhance data handling and user-experience performance.'
-    },
 ];
 
 export const skills: Skill[] = [
   // Frontend
-  { id: '1', name: 'React', icon: '⚛️', category: 'frontend' },
-  { id: '2', name: 'Next.js', icon: '▲', category: 'frontend' },
-  { id: '3', name: 'JavaScript', icon: '📜', category: 'frontend' },
-  { id: '4', name: 'TypeScript', icon: '🔷', category: 'frontend' },
-  { id: '5', name: 'HTML5', icon: '🎨', category: 'frontend' },
-  { id: '6', name: 'CSS3', icon: '🎨', category: 'frontend' },
-  { id: '7', name: 'Tailwind CSS', icon: '🎨', category: 'frontend' },
-  { id: '8', name: 'SASS/SCSS', icon: '🎨', category: 'frontend' },
-  { id: '9', name: 'Redux', icon: '🎨', category: 'frontend' },
-  
-  // Backend
-  { id: '10', name: 'Java (17+)', icon: '☕', category: 'backend' },
-  { id: '11', name: 'Spring Boot', icon: '☕', category: 'backend' },
-  { id: '12', name: 'Project Reactor', icon: '☕', category: 'backend' },
-  { id: '13', name: 'Node.js', icon: '🟢', category: 'backend' },
-  { id: '14', name: 'Express', icon: '⚡', category: 'backend' },
-  { id: '15', name: 'Python', icon: '🐍', category: 'backend' },
-  { id: '16', name: 'REST APIs', icon: '🎯', category: 'backend' },
-  { id: '17', name: 'Microservices', icon: '🎯', category: 'backend' },
-  { id: '18', name: 'Event-Driven Architecture', icon: '◈', category: 'backend' },
+  { id: '1', name: 'HTML5', icon: React.createElement('img', { src: '/logos/html5.svg', alt: 'HTML5 logo', width: 36, height: 36 }), category: 'frontend' },
+  { id: '2', name: 'CSS3', icon: React.createElement('img', { src: '/logos/css3.svg', alt: 'CSS3 logo', width: 36, height: 36 }), category: 'frontend' },
+  { id: '3', name: 'JavaScript', icon: React.createElement('img', { src: '/logos/javascript.svg', alt: 'JavaScript logo', width: 36, height: 36 }), category: 'frontend' },
 
-  // DevOps & Cloud
-  { id: '19', name: 'Docker', icon: '🐳', category: 'devops' },
-  { id: '20', name: 'Kubernetes', icon: '☸️', category: 'devops' },
-  { id: '21', name: 'Jenkins', icon: '🔧', category: 'devops' },
-  { id: '22', name: 'AWS', icon: '☁️', category: 'devops' },
-  { id: '23', name: 'Azure', icon: '🔵', category: 'devops' },
-  { id: '24', name: 'CI/CD Pipelines', icon: '☁️', category: 'devops' },
-  { id: '25', name: 'SonarQube', icon: '🔵', category: 'devops' },
-  { id: '26', name: 'Git Version Control', icon: '☸️', category: 'devops' },
+  // Backend
+  { id: '4', name: 'Java', icon: React.createElement('img', { src: '/logos/java.svg', alt: 'Java logo', width: 36, height: 36 }), category: 'backend' },
+  { id: '5', name: 'Python', icon: React.createElement('img', { src: '/logos/python.svg', alt: 'Python logo', width: 36, height: 36 }), category: 'backend' },
+  { id: '6', name: 'PHP', icon: React.createElement('img', { src: '/logos/php.svg', alt: 'PHP logo', width: 36, height: 36 }), category: 'backend' },
+  { id: '7', name: 'Node.js', icon: React.createElement('img', { src: '/logos/nodejs.svg', alt: 'Node.js logo', width: 36, height: 36 }), category: 'backend' },
+  { id: '8', name: 'Laravel', icon: React.createElement('img', { src: '/logos/laravel.svg', alt: 'Laravel logo', width: 36, height: 36 }), category: 'backend' },
 
   // Database
-  { id: '27', name: 'PostgreSQL', icon: '🍃', category: 'database' },
-  { id: '28', name: 'MongoBD', icon: '🐘', category: 'database' },
-  { id: '29', name: 'MySQL', icon: '🐬', category: 'database' },
-  { id: '30', name: 'Redis', icon: '🔴', category: 'database' },
-  { id: '31', name: 'Firebase', icon: '🔥', category: 'database' },
-  { id: '32', name: 'Database Design', icon: '🔴', category: 'database' },
-  { id: '33', name: 'Query Optimization', icon: '🔴', category: 'database' },
-  { id: '34', name: 'Caching Strategies', icon: '🔴', category: 'database' },
-  
-  // Messaging & Workflow Orchestration
-  { id: '35', name: 'RabbitMQ', icon: '📱', category: 'messaging' },
-  { id: '103', name: 'Kafka', icon: '📱', category: 'messaging' },
-  { id: '36', name: 'Netflix Conductor', icon: '🦋', category: 'messaging' },
-  { id: '37', name: 'Workflow Automation', icon: '🤖', category: 'messaging' },
-  { id: '38', name: 'Event Streaming', icon: '🍎', category: 'messaging' },
+  { id: '9', name: 'MySQL', icon: React.createElement('img', { src: '/logos/mysql.svg', alt: 'MySQL logo', width: 36, height: 36 }), category: 'database' },
 
-  // Testing
-  { id: '39', name: 'JUnit', icon: '📱', category: 'testing' },
-  { id: '40', name: 'Mockito', icon: '📱', category: 'testing' },
-  { id: '41', name: 'Jest', icon: '📱', category: 'testing' },
-  { id: '42', name: 'Selenium', icon: '📱', category: 'testing' },
-  { id: '43', name: 'Playwright', icon: '📱', category: 'testing' },
-  { id: '44', name: 'Cucumber', icon: '📱', category: 'testing' },
-  { id: '45', name: 'Behavior-Driven Development', icon: '📱', category: 'testing' },
-  { id: '46', name: 'Test-Driven Development', icon: '📱', category: 'testing' },
-  
-  // Other Skills
-  { id: '47', name: 'Agile/Scrum', icon: '🏃', category: 'other-skills' },
-  { id: '60', name: 'Jira', icon: '🔌', category: 'other-skills' },
-  { id: '61', name: 'Confluence', icon: '🔌', category: 'other-skills' },
-  { id: '53', name: 'Postman', icon: '📚', category: 'other-skills' },
-  { id: '57', name: 'Bash/Shell', icon: '🔌', category: 'other-skills' },
-  { id: '63', name: 'Team Collaboration', icon: '🏃', category: 'other-skills' },
-  { id: '68', name: 'Agile Mindset', icon: '🏃', category: 'other-skills' },
-  { id: '69', name: 'Attention to Detail', icon: '🏃', category: 'other-skills' },
-  { id: '55', name: 'Intellij IDEA', icon: '🏃', category: 'other-skills' },
-  { id: '56', name: 'Visual Studio Code', icon: '🔌', category: 'other-skills' },
+  // AI / ML
+  { id: '10', name: 'Machine Learning', icon: React.createElement('img', { src: '/logos/ml.svg', alt: 'Machine Learning logo', width: 36, height: 36 }), category: 'ai' },
 ];
 
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'Semantic Search Engine',
-    description: 'Developed a semantic movie search engine with an intuitive JSP-driven UI. Built a natural-language query algorithm using Microsoft LUIS for intent detection and integrated SPARQL queries on DBpedia to deliver accurate movie results.',
-    technologies: ['Java', 'Jsp', 'SPARQL', 'Spring MVC'],
-    links: {
-      github: 'https://github.com/VoraHarsh/Projects/tree/master/Search%20Engine%20Based%20on%20Semantic%20Web-Java%20WebApp/WebApp',
-      screenshots: 'https://drive.google.com/drive/folders/1j0l5FExAKG5wJEPtcg2J6Gdu7D5qbx_M?usp=sharing',
-      publication: 'https://www.ijsr.net/getabstract.php?paperid=ART20196648',
-    },
+    title: 'Wibrary - Mini Library System',
+    description: 'Wibrary is a mini library management system developed for the University of Mindanao (UM) that streamlines book tracking, borrowing, returns, and user management through a simple and user-friendly interface.',
+    technologies: ['Java'],
+    links: {},
     image: '/Project1.png',
+    galleryImages: ['/Project1.png', '/Project1-1.png', '/Project1-2.png'],
   },
   {
     id: '2',
-    title: 'Movie Ticket Booking System',
-    description: 'Developed an Android-based movie ticket booking app using Java, Firebase, and MySQL. Enabled users to select theatres, choose movies and showtimes, view seating charts, reserve seats in real time, complete payments, and access their order history.',
-    technologies: ['Android', 'Java', 'FireBase', 'MySQL'],
-    links: {
-      github: 'https://github.com/VoraHarsh/Projects/tree/master/Movie%20Ticket%20Booking%20System-Desktop%20Application',
-      screenshots: 'https://drive.google.com/drive/folders/1ahMN17RvjemHflvselTJjxvA3nV5YxpF?usp=sharing',
-    },
+    title: 'yUM-e Food Ordering App',
+    description: 'Built an Android-based food ordering app for University of Mindanao students using Java, enabling menu browsing, order placement, and order tracking for campus canteens.',
+    technologies: ['Java', 'MySQL'],
+    links: {},
     image: '/Project2.png',
+    galleryImages: ['/Project2.png', '/Project2-1.png'],
   },
   {
     id: '3',
-    title: 'Online Book Store',
-    description: 'Built desktop and mobile applications for online book search and purchase, supporting title, author, and subject-based queries. Designed a real-time shopping cart that displays selected items, updates totals dynamically, and enables easy item removal.',
-    technologies: ['Android', 'Java', 'FireBase', 'MySQL'],
-    links: {
-      github: 'https://github.com/VoraHarsh/Projects/tree/master/Online%20Book%20Store-Android%20Application/BookkarBooks/BookkarBooks',
-      screenshots: 'https://drive.google.com/drive/folders/1YrANLbXh7Du0BqIwjAonlvjypOlDvY8L?usp=sharing',
-    },
-    image: '/Project3.jpg',
+    title: 'Pet Services System',
+    description: 'Built desktop applications for managing pet information, appointments, and care schedules. Implemented features for pet registration, medical history tracking, and communication with veterinarians.',
+    technologies: ['Laravel'],
+    links: {},
+    image: '/Project3.png',
+    galleryImages: ['/Project3.png', '/Project3-1.png', '/Project3-2.png','/Project3-3.png','/Project3-4.png'],
   },
+  {
+    id: '4',
+    title: 'Cemetery System',
+    description: 'Built a cemetery management system to organize burial records, plot details, and visitor information through a simple web interface.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    links: {},
+    image: '/Project4.png',
+    galleryImages: ['/Project4.png', '/Project4-1.png', '/Project4-2.png'],
+  },
+  {
+    id: '5',
+    title: 'Bank System',
+    description: 'Developed a banking system to handle account creation, transactions, and balance tracking with reliable backend logic.',
+    technologies: ['Python'],
+    links: {},
+    image: '/Project5.png',
+    galleryImages: ['/Project5.png', '/Project5-1.png', '/Project5-2.png'],
+  },
+  {
+    id: '6',
+    title: 'PM2 Detection',
+    description: 'Created a PM2 detection project focused on identifying particulate matter patterns from collected environmental data.',
+    technologies: ['Machine Learning'],
+    links: {},
+    image: '/Project6.png',
+    galleryImages: ['/Project6.png'],
+  },
+  {
+    id: '7',
+    title: 'Phishing Detection',
+    description: 'Built a phishing detection model to classify suspicious links and improve early warning against fraudulent websites.',
+    technologies: ['Machine Learning'],
+    links: {},
+    image: '/Project7.png',
+    galleryImages: ['/Project7.png'],
+  },
+  {
+    id: '8',
+    title: 'Tic-Tac-Toe Game',
+    description: 'Implemented a Tic-Tac-Toe game using Python, featuring a responsive design and intuitive user interface.',
+    technologies: ['Python'],
+    links: {},
+    image: '/Project8.png',
+    galleryImages: ['/Project8.png', '/Project8-1.png'],
+  },
+    {
+    id: '9',
+    title: 'Weather Forecasting App',
+    description: 'Developed a weather forecasting application to provide accurate and up-to-date weather information to users.',
+    technologies: ['Python'],
+    links: {},
+    image: '/Project9.png',
+    galleryImages: ['/Project9.png', '/Project9-1.png'],
+  },
+  {
+    id: '10',
+    title: 'Student Information System',
+    description: 'Developed a student information system to manage and track student records, grades, and academic progress.',
+    technologies: ['Laravel'],
+    links: {},
+    image: '/Project10.png',
+    galleryImages: ['/Project10.png', '/Project10-1.png', '/Project10-2.png'],
+  },
+   {
+    id: '11',
+    title: 'Simple Authentication System',
+    description: 'Developed a simple authentication system to manage user login and registration with secure password handling.',
+    technologies: ['React', 'Node.js'],
+    links: {},
+    image: '/Project11.png',
+    galleryImages: ['/Project11.png', '/Project11-1.png', '/Project11-2.png'],
+  },
+  {
+    id: '12',
+    title: 'Movie Recommendation System',
+    description: 'Built a movie recommendation system to suggest films based on user preferences and viewing history.',
+    technologies: ['React', 'Node.js'],
+    links: {},
+    image: '/Project12.png',
+    galleryImages: ['/Project12.png', '/Project12-1.png'],
+  },
+  {
+    id: '13',
+    title: 'Data Structure Visualizer',
+    description: 'Developed a visualizer to help students understand and interact with various data structures and algorithms.',
+    technologies: ['Python'],
+    links: {},
+    image: '/Project13.png',
+    galleryImages: ['/Project13.png', '/Project13-1.png'],
+  }
+
+
 ];
 
 export const education: Education[] = [
   {
     id: '1',
-    degree: "Master's in Computer Science",
-    institution: 'Illinois Institute of Technology',
-    duration: '2019 - 2021',
-    description: 'Coursework: Algorithms, Artificial Intelligence, Advanced Operating Systems, Machine Learning, Deep Learning, Mobile Application Development, Enterprise Web Applications, Computer Vision, and Big Data Technologies.',
-    type: 'education',
-  },
-  {
-    id: '2',
-    degree: "Bachelor's in Computer Engineering",
-    institution: 'Mumbai University',
-    duration: '2015 - 2019',
-    description: 'Coursework: Data Structures, Analysis of Algorithms, Object-Oriented Design, Big Data Analysis, Database Management Systems, and Distributed Systems.',
+    degree: "Bachelor of Science in Computer Science",
+    institution: 'University of Mindanao',
+    duration: '2023 - 2027',
+    description: 'The curriculum focuses on algorithms, programming, software engineering, and systems. The program also features specialization tracks in cybersecurity.',
     type: 'education',
   },
   // Add certifications
   {
-    id: '3',
-    degree: 'Oracle Certified Professional, Java Programmer',
-    institution: 'Oracle',
-    duration: '2018',
-    description: 'Professional certification in Java programming and software development.',
+    id: '2',
+    degree: 'IT Specialist - Network Security',
+    institution: 'Pearson',
+    duration: 'Issued Mar 2026',
+    description: 'Professional certification covering network security principles, operating system security, and secure network infrastructure.',
+    image: '/ITS3.PNG',
     type: 'certification',
   },
-];
-
-export const recommendations: Recommendation[] = [
-  {
-    id: '1',
-    name: 'Benjamin Novatzky',
-    role: 'Senior Engineering Manager',
-    company: 'GE Healthcare',
-    text: "I've had the chance to be Harsh's manager over the last 4 years. During this time Harsh has grown from an entry-level engineer to an engineer with solid execution and ownership. Harsh is a dedicated reliable contributor, with technical skills in back-end services, Java/SpringBoot, automation technologies (Serenity/Playwright), and expanding skill in front-end technologies (JavaScript/TypeScript). He has also been expanding his design skills by taking on new challenging areas of design ownership. Harsh likes to take on technical challenges, learn new areas, and do failure mode thinking. He's also become a good resource for the team and a go-to person for the areas under his ownership. Harsh is easy to work with, is very responsive to product needs/pivots, and is willing to help out wherever the team needs support. Overall, Harsh is great to have on the team and is an important asset to the team.",
-    avatar: 'BN',
-  },
-  {
-    id: '2',
-    name: 'Ali Mihankhah',
-    role: 'Staff Software Engineer',
-    company: 'GE Healthcare',
-    text: "I worked with Harsh for over 4 years, where he played a key role in developing backend services using Java, Spring, and RESTful APIs. Harsh quickly ramped up on reactive programming and excelled at building modular, asynchronous pipelines for processing data — an area that required both precision and deep technical understanding. His work consistently resulted in clean, well-structured APIs that were both meaningful and easy to integrate. Harsh was always open to feedback and approached collaboration with humility, curiosity, and professionalism. Whether it was refining a design, debugging a challenging issue, or contributing to architectural discussions, Harsh showed clarity, ownership, and a growth-oriented mindset to every interaction. He consistently looked for opportunities to expand his technical domain and was able to contribute across the stack when needed. Harsh is reliable, adaptable, and deeply committed to delivering high-quality solutions. He would be a valuable asset to any engineering team.",
-    avatar: 'AM',
-  },
   {
     id: '3',
-    name: 'Supradeep Peyetti',
-    role: 'Sr. QA Automation Engineer',
-    company: 'GE HEalthcare',
-    text: "As Harsh's Engineer Peer at GeHealthCare, I have had the chance of working with Harsh and I can confidently say he’s one of the most reliable and technically sound software engineers I’ve worked with. As a Software Engineer , Harsh brings a strong command of both backend development and frontend expertise , consistently delivering clean, scalable, and well-architected solutions. What stands out most is his deep understanding of design principles and his ability to apply them thoughtfully across projects. Harsh approaches every challenge with clarity and precision. He’s also a great collaborator—always willing to share knowledge, support teammates, and contribute to a positive team culture. I highly recommend Harsh for any role that demands strong engineering skills, architectural thinking, and a proactive mindset.",
-    avatar: 'SP',
+    degree: 'IT Specialist - Databases',
+    institution: 'Certiport - A Pearson VUE Business',
+    duration: 'Issued Mar 2025',
+    description: 'Validation of fundamental database concepts, including design, manipulation, and administration of data.',
+    image: '/ITS1.PNG',
+    type: 'certification',
   },
   {
     id: '4',
-    name: 'Dimple Mehra',
-    role: 'Senior Machine Learning Engineer',
-    company: 'Unity',
-    text: "Harsh is a great professional to work with. We've worked together on several projects and he helped me a lot to learn new skills. He always went the extra mile and found great ways to quickly solve problems. It would be pleasure working with him again in future.",
-    avatar: 'DM',
+    degree: 'IT Specialist - Java',
+    institution: 'Certiport - A Pearson VUE Business',
+    duration: 'Issued Mar 2024',
+    description: 'Professional certification validating fundamental knowledge of Java programming, including data types, operators, and object-oriented concepts.',
+    image: '/ITS2.PNG',
+    type: 'certification',
   },
+
+  
+
 ];
 
 export const socialLinks: SocialLinks[] = [
-  { name: 'GitHub', icon: React.createElement(Github, { size: 18 }), url: 'https://github.com/VoraHarsh' },
-  { name: 'LinkedIn', icon: React.createElement(Linkedin, { size: 18 }), url: 'https://linkedin.com/in/voraharsh' },
-  { name: 'Email', icon: React.createElement(Mail, { size: 18 }), url: 'mailto:harshvora242@gmail.com' },
+  { name: 'GitHub', icon: React.createElement(Github, { size: 18 }), url: 'https://github.com/naz-33' },
+  { name: 'LinkedIn', icon: React.createElement(Linkedin, { size: 18 }), url: 'https://www.linkedin.com/in/nazlah-nanding-5759822a6/' },
+  { name: 'Email', icon: React.createElement(Mail, { size: 18 }), url: 'n.nanding.545627@umindanao.edu.ph' },
 ];

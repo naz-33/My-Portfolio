@@ -11,10 +11,10 @@ export default function Experience() {
           <p style={{ fontSize: '1.1rem', color: 'var(--text-secondary)' }}>My professional journey</p>
         </div>
         <div style={{ position: 'relative', paddingLeft: '3rem' }} className="experience-timeline">
-        <div style={{ position: 'absolute', left: '47px', top: '0', height: '100%', width: '3px', backgroundColor: '#3b82f6', opacity: 0.5, }} className="timeline-line" />
+        <div style={{ position: 'absolute', left: '47px', top: '0', height: '100%', width: '3px', backgroundColor: '#f63bc4', opacity: 0.5, }} className="timeline-line" />
           {experiences.map((exp) => (
             <div key={exp.id} style={{ position: 'relative', marginBottom: '3rem' }}>
-              <div style={{ position: 'absolute', left: '0px', top: '2rem', width: '20px', height: '20px', backgroundColor: '#3b82f6', borderRadius: '50%', border: '4px solid var(--bg-primary)', boxShadow: '0 0 0 4px var(--bg-secondary)', zIndex: 2, transform: 'translateX(-50%)' }} className="timeline-dot" />
+              <div style={{ position: 'absolute', left: '0px', top: '2rem', width: '20px', height: '20px', backgroundColor: '#f63bc4', borderRadius: '50%', border: '4px solid var(--bg-primary)', boxShadow: '0 0 0 4px var(--bg-secondary)', zIndex: 2, transform: 'translateX(-50%)' }} className="timeline-dot" />
               <div 
                 style={{
                   marginLeft: '2rem',
@@ -40,7 +40,15 @@ export default function Experience() {
                 <div style={{ color: 'var(--accent)', fontSize: '0.9rem', fontWeight: '600', marginBottom: '0.5rem' }}>{exp.duration}</div>
                 <h3 style={{ fontSize: '1.4rem', marginBottom: '0.3rem', fontWeight: '700' }}>{exp.title}</h3>
                 <h4 style={{ fontSize: '1.1rem', color: 'var(--text-secondary)', marginBottom: '1rem', fontWeight: '500' }}>{exp.company}</h4>
-                <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7' }}>{exp.description}</p>
+                {Array.isArray(exp.description) ? (
+                  <ul style={{ color: 'var(--text-secondary)', lineHeight: '1.7', paddingLeft: '1.1rem' }}>
+                    {exp.description.map((d, i) => (
+                      <li key={i} style={{ marginBottom: '0.25rem' }}>{d}</li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7' }}>{exp.description}</p>
+                )}
               </div>
             </div>
           ))}

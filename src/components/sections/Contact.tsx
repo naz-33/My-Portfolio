@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { Mail, MapPin, Copy } from 'lucide-react';
 import { personalInfo } from '@/data/portfolio';
 import emailjs from '@emailjs/browser';
 
@@ -65,7 +66,7 @@ export default function Contact({ theme }: ContactProps) {
   const handleCopyEmail = async () => {
     try {
       await navigator.clipboard.writeText(personalInfo.email);
-      setToastMessage('Email copied to clipboard! 📋');
+      setToastMessage('Email copied to clipboard!');
       setShowToast(true);
       setTimeout(() => {
         setShowToast(false);
@@ -90,7 +91,7 @@ export default function Contact({ theme }: ContactProps) {
             Get In Touch
           </h2>
           <p style={{ fontSize: '1rem', color: 'var(--text-secondary)' }}>
-            Have a project in mind or want to chat? Feel free to reach out! 📬
+            Have a project in mind or want to chat? Feel free to reach out!
           </p>
         </div>
 
@@ -105,12 +106,10 @@ export default function Contact({ theme }: ContactProps) {
           {/* Left Side - Contact Info */}
           <div style={{ order: 1, textAlign: 'left' }} className="contact-info">
             <h3 style={{ fontSize: '1.8rem', marginBottom: '1.5rem', fontWeight: '700', textAlign: 'left' }}>
-              Let's Connect 🤝
+              Let's Connect
             </h3>
             <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: '2rem', textAlign: 'left' }}>
-              I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision. 
-              Messages sent through this form will be delivered directly to my inbox. Feel free to contact me using 
-              the form or reach out directly via email.
+              I'm an aspiring software developer and machine learning enthusiast seeking internship opportunities to further develop my technical skills and contribute to meaningful projects. Whether you have an internship position, a research opportunity, or a project where I can learn and add value, I'd be excited to connect. Messages sent through this form will be delivered directly to my inbox. Feel free to reach out using the form below or contact me via email.
             </p>
 
             {/* Contact Details */}
@@ -127,7 +126,7 @@ export default function Contact({ theme }: ContactProps) {
                   fontSize: '1.5rem',
                   flexShrink: 0,
                 }}>
-                  ✉️
+                  <Mail size={20} color="#fff" />
                 </div>
                 <div>
                   <div style={{ 
@@ -150,7 +149,7 @@ export default function Contact({ theme }: ContactProps) {
                       }}
                       aria-label="Copy email"
                     >
-                      📋
+                      <Copy size={16} />
                     </button>
                   </div>
                 </div>
@@ -160,7 +159,7 @@ export default function Contact({ theme }: ContactProps) {
                 <div style={{
                   width: '48px',
                   height: '48px',
-                  backgroundColor: '#3b82f6',
+                  backgroundColor: '#f63bc4',
                   borderRadius: '12px',
                   display: 'flex',
                   alignItems: 'center',
@@ -168,7 +167,7 @@ export default function Contact({ theme }: ContactProps) {
                   fontSize: '1.5rem',
                   flexShrink: 0,
                 }}>
-                  📍
+                  <MapPin size={20} color="#fff" />
                 </div>
                 <div>
                   <div style={{ 
@@ -180,7 +179,7 @@ export default function Contact({ theme }: ContactProps) {
                     Location
                   </div>
                   <div style={{ fontWeight: '600', color: 'var(--text-secondary)', fontSize: '0.9rem' }} className="contact-value">
-                    Chicago, USA
+                    Davao City
                   </div>
                 </div>
               </div>
@@ -314,7 +313,7 @@ export default function Contact({ theme }: ContactProps) {
                   gap: '0.5rem',
                 }}
               >
-                {isSubmitting ? 'Sending...' : 'Send Message'} {isSubmitting ? '⏳' : '✉️'}
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>
