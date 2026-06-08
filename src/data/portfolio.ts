@@ -68,7 +68,7 @@ export const projects: Project[] = [
     technologies: ['Java', 'MySQL'],
     links: {},
     image: '/Project2.png',
-    galleryImages: ['/Project2.png', '/Project2-1.png'],
+    galleryImages: ['/Project2.png', '/Project2-1.PNG'],
   },
   {
     id: '3',
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     technologies: ['Laravel'],
     links: {},
     image: '/Project3.png',
-    galleryImages: ['/Project3.png', '/Project3-1.png', '/Project3-2.png','/Project3-3.png','/Project3-4.png'],
+    galleryImages: ['/Project3.png', '/Project3-1.PNG', '/Project3-2.PNG','/Project3-3.PNG','/Project3-4.PNG'],
   },
   {
     id: '4',
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
     links: {},
     image: '/Project4.png',
-    galleryImages: ['/Project4.png', '/Project4-1.png', '/Project4-2.png'],
+    galleryImages: ['/Project4.PNG', '/Project4-1.PNG', '/Project4-2.PNG'],
   },
   {
     id: '5',
@@ -95,7 +95,7 @@ export const projects: Project[] = [
     technologies: ['Python'],
     links: {},
     image: '/Project5.png',
-    galleryImages: ['/Project5.png', '/Project5-1.png', '/Project5-2.png'],
+    galleryImages: ['/Project5.PNG', '/Project5-1.PNG', '/Project5-2.PNG'],
   },
   {
     id: '6',
@@ -112,8 +112,8 @@ export const projects: Project[] = [
     description: 'Built a phishing detection model to classify suspicious links and improve early warning against fraudulent websites.',
     technologies: ['Machine Learning'],
     links: {},
-    image: '/Project7.png',
-    galleryImages: ['/Project7.png'],
+    image: '/Project7.PNG',
+    galleryImages: ['/Project7.PNG'],
   },
   {
     id: '8',
@@ -121,8 +121,8 @@ export const projects: Project[] = [
     description: 'Implemented a Tic-Tac-Toe game using Python, featuring a responsive design and intuitive user interface.',
     technologies: ['Python'],
     links: {},
-    image: '/Project8.png',
-    galleryImages: ['/Project8.png', '/Project8-1.png'],
+    image: '/Project8.PNG',
+    galleryImages: ['/Project8.PNG', '/Project8-1.PNG'],
   },
     {
     id: '9',
@@ -130,8 +130,8 @@ export const projects: Project[] = [
     description: 'Developed a weather forecasting application to provide accurate and up-to-date weather information to users.',
     technologies: ['Python'],
     links: {},
-    image: '/Project9.png',
-    galleryImages: ['/Project9.png', '/Project9-1.png'],
+    image: '/Project9.PNG',
+    galleryImages: ['/Project9.PNG', '/Project9-1.PNG'],
   },
   {
     id: '10',
@@ -139,8 +139,8 @@ export const projects: Project[] = [
     description: 'Developed a student information system to manage and track student records, grades, and academic progress.',
     technologies: ['Laravel'],
     links: {},
-    image: '/Project10.png',
-    galleryImages: ['/Project10.png', '/Project10-1.png', '/Project10-2.png'],
+    image: '/Project10.PNG',
+    galleryImages: ['/Project10.PNG', '/Project10-1.PNG', '/Project10-2.PNG'],
   },
    {
     id: '11',
@@ -148,8 +148,8 @@ export const projects: Project[] = [
     description: 'Developed a simple authentication system to manage user login and registration with secure password handling.',
     technologies: ['React', 'Node.js'],
     links: {},
-    image: '/Project11.png',
-    galleryImages: ['/Project11.png', '/Project11-1.png', '/Project11-2.png'],
+    image: '/Project11.PNG',
+    galleryImages: ['/Project11.PNG', '/Project11-1.PNG', '/Project11-2.PNG'],
   },
   {
     id: '12',
@@ -157,8 +157,8 @@ export const projects: Project[] = [
     description: 'Built a movie recommendation system to suggest films based on user preferences and viewing history.',
     technologies: ['React', 'Node.js'],
     links: {},
-    image: '/Project12.png',
-    galleryImages: ['/Project12.png', '/Project12-1.png'],
+    image: '/Project12.PNG',
+    galleryImages: ['/Project12.PNG', '/Project12-1.PNG'],
   },
   {
     id: '13',
@@ -166,8 +166,8 @@ export const projects: Project[] = [
     description: 'Developed a visualizer to help students understand and interact with various data structures and algorithms.',
     technologies: ['Python'],
     links: {},
-    image: '/Project13.png',
-    galleryImages: ['/Project13.png', '/Project13-1.png'],
+    image: '/Project13.PNG',
+    galleryImages: ['/Project13.PNG', '/Project13-1.PNG'],
   }
 
 
