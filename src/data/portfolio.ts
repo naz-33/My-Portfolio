@@ -36,6 +36,7 @@ export const skills: Skill[] = [
   { id: '1', name: 'HTML5', icon: React.createElement('img', { src: '/logos/html5.svg', alt: 'HTML5 logo', width: 36, height: 36 }), category: 'frontend' },
   { id: '2', name: 'CSS3', icon: React.createElement('img', { src: '/logos/css3.svg', alt: 'CSS3 logo', width: 36, height: 36 }), category: 'frontend' },
   { id: '3', name: 'JavaScript', icon: React.createElement('img', { src: '/logos/javascript.svg', alt: 'JavaScript logo', width: 36, height: 36 }), category: 'frontend' },
+  { id: '11', name: 'React', icon: React.createElement('img', { src: '/logos/react.svg', alt: 'React logo', width: 36, height: 36 }), category: 'frontend' },
 
   // Backend
   { id: '4', name: 'Java', icon: React.createElement('img', { src: '/logos/java.svg', alt: 'Java logo', width: 36, height: 36 }), category: 'backend' },
