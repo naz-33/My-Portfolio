@@ -54,6 +54,15 @@ export const skills: Skill[] = [
 
 export const projects: Project[] = [
   {
+    id: '14',
+    title: 'Mobile E-commerce Control Center',
+    description: 'Developed a mobile admin dashboard for an e-commerce platform, featuring comprehensive product CRUD management',
+    technologies: ['Laravel', 'React', 'Sqlite'],
+    links: {},
+    image: '/Project14-1.PNG',
+    galleryImages: ['/Project14-1.PNG', '/Project14-2.PNG'],
+  },
+  {
     id: '3',
     title: 'Pet Services System',
     description: 'Built desktop applications for managing pet information, appointments, and care schedules. Implemented features for pet registration, medical history tracking, and communication with veterinarians.',
