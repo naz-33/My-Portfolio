@@ -15,7 +15,7 @@ export default function About() {
       accent: 'rgba(246, 59, 196, 0.22)',
     },
     {
-      label: 'Open to Internship Opportunities',
+      label: 'Seeking SWE / ML Internship',
       icon: BriefcaseBusiness,
       accent: 'rgba(34, 197, 94, 0.2)',
     },
@@ -78,9 +78,9 @@ export default function About() {
                 lineHeight: 1.05,
               }}
             >
-              Building Useful Software,
+              I Build Things That
               <br />
-              One Iteration at a Time
+              Actually Work
             </h2>
             <p
               style={{
@@ -91,7 +91,7 @@ export default function About() {
                 maxWidth: '650px',
               }}
             >
-              I turn ideas into practical products by combining engineering fundamentals with experimentation.
+              Turning messy real-world problems into software that runs outside the classroom.
             </p>
             <div
               style={{
@@ -102,10 +102,10 @@ export default function About() {
               }}
             >
               <p style={{ marginBottom: '0.9rem' }}>
-                I&apos;m a Computer Science undergraduate who learns best by shipping things that work outside the classroom. I use projects as a testing ground, whether that means building a feature from scratch, debugging edge cases, or reworking architecture when the first version does not scale. That hands-on process is how I sharpen both technical judgment and execution.
+                I’m a Computer Science undergraduate focused on software development, AI, and intelligent systems. I enjoy building applications that combine modern technologies, machine learning, and AI agents to automate workflows and improve user experiences.
               </p>
               <p>
-                My focus is software development with growing depth in AI and machine learning, especially where ideas need to become practical tools. I care about writing clear, maintainable code and solving problems with real constraints, not just ideal conditions. With each build, I aim to become a stronger engineer: faster at identifying root causes, better at making tradeoffs, and more deliberate about building systems people can actually use.
+                Through hands-on projects, I develop practical solutions, write clean and maintainable code, and continuously expand my skills in designing scalable and secure software systems.
               </p>
             </div>
           </div>
