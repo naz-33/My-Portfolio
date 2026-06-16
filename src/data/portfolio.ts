@@ -13,7 +13,7 @@ export const personalInfo = {
 
 My focus is software development with growing depth in AI and machine learning, especially where ideas need to become practical tools. I care about writing clear, maintainable code and solving problems with real constraints, not just ideal conditions. With each build, I aim to become a stronger engineer: faster at identifying root causes, better at making tradeoffs, and more deliberate about building systems people can actually use.`,
   ],
-  resumeUrl: '/resume.pdf',
+  resumeUrl: '/updated-resume.pdf',
 };
 
 export const experiences: Experience[] = [
