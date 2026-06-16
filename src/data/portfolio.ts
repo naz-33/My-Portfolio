@@ -73,12 +73,12 @@ export const projects: Project[] = [
   },
   {
     id: '10',
-    title: 'Student Information System',
-    description: 'Developed a student information system to manage and track student records, grades, and academic progress.',
+    title: 'Student Management System',
+    description: 'Developed a student management system to manage and track student records, grades, schedules, and academic progress.',
     technologies: ['Laravel','Sqlite'],
     links: {},
-    image: '/Project10.PNG',
-    galleryImages: ['/Project10.PNG', '/Project10-1.PNG', '/Project10-2.PNG'],
+    image: '/ProjectSMS1.PNG',
+    galleryImages: ['/ProjectSMS1.PNG', '/ProjectSMS2.PNG', '/ProjectSMS3.PNG', '/ProjectSMS4.PNG'],
   },
   {
     id: '11',
